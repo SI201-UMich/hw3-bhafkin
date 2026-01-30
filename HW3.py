@@ -7,6 +7,7 @@
 # Asked ChatGPT hints for debugging and suggesting the general structure of the code
 # Did your use of GenAI on this assignment align with your goals and guidelines in 
 #    your Gen AI contract? If not, why?
+# Yes, although minimal, my use of GenAI did align with the goals and guidelines on my GenAI contract. I used it to primarily help me with the structure of this code and explain certain concepts.
 
 import random
 import io
@@ -168,29 +169,17 @@ class CouponDispenser:
             print(f"{coupon} distribution count: {count}.")
 
 def main():
-    """
-    Driver function:
-      - Define the coupon_cards list (example coupons below)
-      - Create a CouponDispenser
-      - Start the interaction via distribute_session()
-      - After exit, call tally_distribution() to print the distribution in the terminal
-    """
+
     coupon_cards = [
         "10% off",
         "Free small coffee",
         "Buy 1 get 1 half off",
         "Free extra espresso shot",
-    ]
-
-    test()
-
-    # Uncomment the lines below as you implement each function.
+        ]
 
     box = CouponDispenser(coupon_cards)
     box.distribute_session()
     box.tally_distribution()
-
-    # pass
 
 # -----------------------
 # Tests (about 3–4 per function)
@@ -468,6 +457,5 @@ def test():
 
 
 if __name__ == "__main__":
-    main()
-    # test()
-
+    # main()
+    test()
