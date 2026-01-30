@@ -110,7 +110,7 @@ class CouponDispenser:
         round_number = 1
 
         while True:
-            user_input = input(f"Round {round_number}")
+            user_input = input(f"Round {round_number} - Enter a name (or a comma-separated list), or type 'show' or 'exit': ")
 
             if user_input == "exit":
                 print("Goodbye!")
@@ -133,7 +133,7 @@ class CouponDispenser:
                         coupon_result = self.issue_coupon(name)
                         print(coupon_result)
 
-                round_number += 1
+            round_number += 1
 
     def tally_distribution(self):
         """
