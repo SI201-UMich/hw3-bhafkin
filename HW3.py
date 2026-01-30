@@ -185,11 +185,12 @@ def main():
     test()
 
     # Uncomment the lines below as you implement each function.
-    # box = CouponDispenser(coupon_cards)
-    # box.distribute_session()
-    # box.tally_distribution()
-    pass
 
+    box = CouponDispenser(coupon_cards)
+    box.distribute_session()
+    box.tally_distribution()
+
+    # pass
 
 # -----------------------
 # Tests (about 3–4 per function)
